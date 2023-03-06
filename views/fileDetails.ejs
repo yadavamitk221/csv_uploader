@@ -1,0 +1,29 @@
+<div class="details-main-container">
+  
+    <h1>
+      Data of <%= locals.file %>
+    </h1>
+    <div class="details-header">
+    <input type="text" id="searchBox" placeholder="Search Here">
+  
+  <table class="content-table" id="table-1">
+  <% for(let i = 0 ; i < datas.length; i++){ %>
+    <tr>
+      <% for(let j = 0 ; j < datas[0].length; j++){ %>
+            <% if( i == 0) {%>
+                <th><%= datas[i][j]%></th>
+            <% }else{%>
+                 <td>
+                  <%=datas[i][j]%>
+                 </td>
+            <% } %>
+      <% } %>
+    </tr>
+  <% } %>
+</table>
+</div>
+
+</div>
+
+
+<script src="/js/filter.js"></script>

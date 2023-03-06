@@ -1,0 +1,25 @@
+<h1>Upload your CSV file</h1>
+<div class="main-container">
+    <div class="form-container">
+        <form action="file/upload" enctype="multipart/form-data" method="post">
+           <p>* Upload csv File only.</p> 
+            <input type="file" name="csv_file">
+            <input type="submit">
+        </form>
+    </div>
+
+    <div class="list-container">
+    <% if(locals.files){ %>   
+        <% for(file of files){ %>
+            <div class="file-container">
+                <a class="filename" href="/file/fileDetails/<%=file.name%>">
+                    <div class="single-file-container">
+                        <h4> <%= file.name %></h4>
+                    </div> 
+                </a>
+                <a class="delete" href="/file/fileDetails/delete/<%=file.name%>"><i class="fa-solid fa-trash"></i></a>
+            </div>
+        <%  } %>
+    <%}%> 
+    </div>
+</div>

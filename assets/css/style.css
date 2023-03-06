@@ -1,0 +1,132 @@
+* {
+    font-family: sans-serif;
+}
+
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    color: rgb(239 239 237);
+}
+
+.main-container{
+    width: 50%;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 3rem;
+    background-color: #242e4c;
+}
+
+.form-container{
+   margin: auto;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    color: white;
+}
+
+input{
+    margin: 1rem 4rem;
+}
+p{
+    margin: 1rem;
+    color: yellow;
+}
+
+
+body{
+    background-color:#a0b1e6;
+}
+
+.file-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0rem 1rem;
+}
+
+.delete{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a{
+    color: #dddddd;
+    text-decoration: none;
+}
+
+.filename:focus{
+    color: #476ee3;
+}
+
+.delete:hover{
+    color: red;
+}
+
+/* Details page Styiling */
+.content-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.content-table tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+    padding: 10px 13px;
+}
+
+.content-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+    color: #009879; 
+}
+
+.content-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.content-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+
+td{
+    font-weight: 200;
+    border-bottom: 1.5px solid #887f7f;
+}
+
+.details-main-container{
+    width: 70%;
+    margin: auto;
+}
+.details-header{    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #242e4c;
+    margin-top: 3rem;
+    border-radius: 5px;
+    overflow: scroll;   
+    direction:rtl;
+}
