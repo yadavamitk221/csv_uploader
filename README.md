@@ -13,4 +13,5 @@ Open your favrouite Browser
 Type: localhost:8000 
 you will be landed on home page.
 
-#Screen shorts
+#Screen shorts.
+   
